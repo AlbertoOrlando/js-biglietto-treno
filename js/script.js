@@ -10,20 +10,22 @@
 
 
 
-let etautente = parseInt(prompt("inserisci la tua età"));
+let etaUtente = parseInt(prompt("inserisci la tua età"));
 
-let kmdaperc = parseInt(prompt("inserisci i km da percorrere"));
+let kmDaPerc = parseInt(prompt("inserisci i km da percorrere"));
 
-let costo = (kmdaperc * 0,21);
+let costo = (kmDaPerc * 0.21);
 
-let costofinale;
 
-if (etautente < 18) {
-    costofinale = costo - ((costo * 20) / 100);
-} else if (etautente > 65) {
-    costofinale = costo - ((costo * 40) / 100);
+
+let costoFinale;
+
+if (etaUtente < 18) {
+    costoFinale = costo - ((costo * 20) / 100);
+} else if (etaUtente > 65) {
+    costoFinale = costo - ((costo * 40) / 100);
 } else {
-    costofinale = costo;
+    costoFinale = costo;
 }
 
-console.log(costofinale.toFixed(2));
+console.log("il prezzo finale è: ", costoFinale.toFixed(2));
